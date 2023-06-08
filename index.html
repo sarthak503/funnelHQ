@@ -9,15 +9,17 @@
 </head>
 <body>
     <div class="body">
-        <div id="box1" class="box" >
-          <div id="item1" class="item" draggable="true" >Box 1</div>
-          <div id="item2" class="item" draggable="true" >Box 2</div>
-          <div id="item3" class="item" draggable="true" >Box 3</div>
+        <div id="box1" class="box" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <div id="item1" class="item" draggable="true" ondragstart="drag(event)">Box 1</div>
+          <div id="item2" class="item" draggable="true" ondragstart="drag(event)">Box 2</div>
+          <div id="item3" class="item" draggable="true" ondragstart="drag(event)">Box 3</div>
         </div>
-        <div id="box2" class="box"></div>
+        <div id="box2" class="box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
     </div>
     <div>
-        <button class="reset-btn">Reset</button>
+        <button class="reset-btn" onclick="resetBoxes()">Reset</button>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
