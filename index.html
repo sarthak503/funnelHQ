@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Drag and Drop</title>
 </head>
 <body>
-    
+    <div class="body">
+        <div id="box1" class="box" >
+          <div id="item1" class="item" draggable="true" >Box 1</div>
+          <div id="item2" class="item" draggable="true" >Box 2</div>
+          <div id="item3" class="item" draggable="true" >Box 3</div>
+        </div>
+        <div id="box2" class="box"></div>
+    </div>
+    <div>
+        <button class="reset-btn">Reset</button>
+    </div>
 </body>
 </html>
